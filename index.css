@@ -85,20 +85,65 @@ main {
 -moz-box-shadow: -11px 15px 0px 1px rgba(237,247,250,1);
 }
 
-@media screen and(width: 450px) {
+.post {
+    width: 1264px;
+    height: 396px;
+    opacity: 1;
+    background: #EDF7FA;
+
+}
+
+.post_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_top h3 {
+    font-family: Heebo, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0px;
+}
+
+.post_top p {
+    font-family: Heebo, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+
+}
+
+.square {
+    width: 418;
+    top: 664px;
+    height: 295;
+    border-radius: 4px;
+    left: 148px;
+    opacity: 1;
+    background-color: #FF6464;
+  }
+
+@media screen and (width: 425px) {
     main {
         flex-direction: column-reverse;
         padding: 24px;
     }
 
+    .left, .right {
+        width: 100%;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
     .left h1 {
-        font-family: Heebo;
+        font-family: Heebo, sans-serif;
         font-weight: 700;
         font-size: 32px;
-        leading-trim: NONE;
         line-height: 40px;
-        letter-spacing: 0px;
         text-align: center;
-
     }
 }
